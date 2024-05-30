@@ -1,0 +1,376 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@900&family=Oswald:wght@600&family=Poppins&family=Ubuntu&display=swap');
+
+:root {
+    --pColour :rgb(229,9,20);
+}
+
+body{
+    font-family: 'Poppins', 'Ubuntu', 'Oswald', sans-serif;
+    background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    max-width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    margin: auto;
+    height: 100px;
+}
+
+#lang {
+    padding: 6px 8px;
+    width: 124px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 0.5px solid white;
+    border-radius: 0.3em;
+    font-size: large;
+    color: white;
+    position: relative;
+    z-index:20;
+}
+
+#signin {
+    background-color: var(--pColour);
+    padding: 8px 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.NavBtn {
+    gap: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    position: relative;
+    z-index: 10;
+}
+
+.main {
+    height: 644px;
+    background-image: url(assets/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    position: relative;
+}
+
+.main .box {
+    height: 644px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+    position: absolute;
+    top: 0;
+}
+
+
+.hero {
+    height: 83.7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Martel Sans', 'Poppins', 'Ubuntu', 'Oswald', sans-serif;
+    gap: 18px;
+    padding: 0px 30px;
+}
+
+.hero>:first-child {
+    display: flex;
+    margin-block-start: 48px;
+    margin-block-end: -22px;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.hero>:nth-child(2) {
+    font-family: 'Poppins', 'Ubuntu', 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+
+.hero>:nth-child(3){
+    font-family: 'Poppins', 'Ubuntu', 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.separation {
+    height: 9px;
+    background-color: rgb(88, 83, 83);
+    position: relative;
+    z-index: 20;
+}
+.hero>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+.hero>div>input{
+    height: 56px;
+    width: 360px;
+    background-color: rgba(23, 23, 23, 0.7);
+    padding: 8px 16px;
+    font-size: 16px;
+    border: 0.5px solid white;
+    border-radius: 0.3em;
+    color: white;
+    position: relative;
+    z-index: 10;
+}
+
+.hero>div>button{
+    height: 56px;
+    width: 202px;
+    background-color: var(--pColour);
+    padding: 8px 16px;
+    font-size: 22px;
+    border: none;
+    border-radius: 0.2em;
+    color: white;
+    position: relative;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.first{
+    margin: auto;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+.third{
+    margin: auto;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0em;
+}
+
+
+.first .firstContent{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0;
+    align-items: left;
+    justify-content: center;
+    z-index: 1;
+}
+.firstContent span:first-child{
+    font-family: 'Martel Sans', 'Poppins', 'Ubuntu', 'Oswald', sans-serif;
+    font-size: 48px;
+}
+.firstContent span:nth-child(2){
+    font-family: sans-serif;
+    font-size: 24px;
+}
+.firstIMG{
+    position: relative;
+}
+.firstIMG img{
+    width: 560px;
+    height: 400px;
+    position: relative;
+    z-index: 2;
+}
+#thirdIMG{
+    position: relative;
+}
+#thirdIMG img{
+    position: relative;
+    z-index: 2;
+}
+#thirdIMG video{
+    position: absolute;
+    bottom: 167px;
+    right:130px;
+    z-index:1;
+}
+
+.firstIMG video{
+    position: absolute;
+    left:74px;
+    top: 82px;
+    z-index: 1;
+}
+
+#faq h2{
+    text-align: center;
+    font-size: 48px;
+    
+}
+#faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+.faqBox{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 90vw;
+    margin: 34px auto;
+    cursor: pointer;
+    font-size: 24px;
+}
+.faqBox:hover{
+    background-color:#414141;
+}
+
+footer{
+    color: white;
+    max-width: 95vw;
+    margin: auto;
+    padding: 60px;
+}
+
+.Footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 40px;
+}
+footer .questions {
+    padding: 34px 0;
+}
+
+.footerItems{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+.footerItems>a{
+    color: white;
+    font-size: 14px;
+}
+
+#signature{
+    font-size: 0.875rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    color: rgba(255,255,255,0.7);
+}
+
+@media screen and (max-width: 750px) {
+    #lang {
+        padding: 1.5px 3px;
+        width: 30px;
+        font-size: 0.5px;
+        
+    }
+    #signin {
+        background-color: var(--pColour);
+        padding: 1.5px 3px;
+        font-size: 12px;
+    }
+    nav img {
+        height: 18px;
+        margin-right: 10px;
+    }
+    .hero>div{
+        gap: 6px;
+    
+    }
+    .hero>div>input{
+        height: 30px;
+        width: 160px;
+        padding: 1px 2px;
+        font-size: 14px;
+    }
+    
+    .hero>div>button{
+        height: 30px;
+        width: 160px;
+        padding: 1px 2px;
+        font-size: 14px;
+    }
+    .first .firstContent{
+        padding: 16px 0;
+    }
+    .firstContent span:first-child{
+        font-family: 'Martel Sans', 'Poppins', 'Ubuntu', 'Oswald', sans-serif;
+        font-size: 22px;
+    }
+    .firstContent span:nth-child(2){
+        font-family: sans-serif;
+        font-size: 14px;
+    } 
+    #cartoon{
+        width: 340px;
+    }
+    #kids{
+        align-items: center;
+        justify-content: center;
+    }
+    .first{
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+    
+    .hero>:first-child {
+        font-size: 22px;
+    }
+    
+    .hero>:nth-child(2) {
+        font-size: 13px;
+    }
+    .hero>:nth-child(3) {
+        font-size: 12px;
+    }
+    .Footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+    footer{
+        padding: 10px 40px;
+    }
+    .footerItems>a{
+        font-size: 11px;
+    }
+    .questions{
+        font-size: 14px;
+    }
+    
+    #faq h2{
+        font-size: 24px;
+    }
+    #faq .faqBox{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .hero>div{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+
