@@ -1,6 +1,7 @@
 # Netflix Clone
 
 This repository contains the code for a Netflix clone. The project is a web application developed using HTML and CSS.
+Preview at - https://rieshukhandelwal.github.io/Netflix/
 
 ## Features
 
